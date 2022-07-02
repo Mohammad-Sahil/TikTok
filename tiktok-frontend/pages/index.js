@@ -1,10 +1,9 @@
 import Head from 'next/head'
-import Video from '../components/video'
+import Video from '../components/Video'
 
 export default function Home() {
   return (
     <div className="app">
-      <h1 onClick={() => alert('Clicked')}>TikTok Clone</h1>
     <div className="app__videos">
       <Head>
         <title>TikTok Clone</title>

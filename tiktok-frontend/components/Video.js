@@ -7,7 +7,6 @@ function Video({ url, channel, description, song, likes, messages, shares }) {
   const videoRef = React.createRef(null);
 
   const onVideoPress = () => {
-    alert('sahil')
     if (playing) {
       videoRef.current.pause();
       setPlaying(false);
