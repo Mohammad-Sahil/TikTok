@@ -1,7 +1,34 @@
 import Head from 'next/head'
 import Video from '../components/Video'
+import axios from 'axios'
+import { useEffect, useState } from 'react'
 
 export default function Home() {
+  const [videoData, setVideoData] = useState(null)
+
+  // const getData = async () => {
+  //   const sldfj = await axios(`http://localhost:8000/v4/data`)
+  //     .then(res => {
+  //       const vData = res.data;
+  //       setVideoData(vData);
+  //       console.log(res)
+  //     })
+  //     .catch((e) => console.log(e))
+  // }
+
+  // useEffect(() => {
+  //   getData()
+  // },[])
+  useEffect(() => {
+    async function getData(){
+      const res = await axios.get( 
+        `http://10.0.2.2:8000/v4/data`
+        );
+      setVideoData(res.data);
+      console.log(res.data);
+    };
+    getData()
+  },[]);
   return (
     <div className="app">
     <div className="app__videos">

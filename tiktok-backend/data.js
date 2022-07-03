@@ -1,7 +1,7 @@
 const data = [
     {
         id : 1,
-        url : "/sample.mp4",
+        url : "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4",
         channel : "Mohammad Sahil",
         description : "This is a nice song by Mohd Rafi",
         song : "Tere sang yara",
@@ -11,7 +11,7 @@ const data = [
     },
     {
         id : 2,
-        url : "/sample.mp4",
+        url : "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4",
         channel : "Mohammad Sahil",
         description : "This is a nice song by Mohd Rafi",
         song : "Tere sang yara",
@@ -21,7 +21,7 @@ const data = [
     },
     {
         id : 3,
-        url : "/sample.mp4",
+        url : "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4",
         channel : "Mohammad Sahil",
         description : "This is a nice song by Mohd Rafi",
         song : "Tere sang yara",
@@ -31,7 +31,7 @@ const data = [
     },
     {
         id : 4,
-        url : "/sample.mp4",
+        url : "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4",
         channel : "Mohammad Sahil",
         description : "This is a nice song by Mohd Rafi",
         song : "Tere sang yara",
@@ -41,7 +41,7 @@ const data = [
     },
     {
         id : 5,
-        url : "/sample.mp4",
+        url : "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4",
         channel : "Mohammad Sahil",
         description : "This is a nice song by Mohd Rafi",
         song : "Tere sang yara",
@@ -51,4 +51,4 @@ const data = [
     }
 ]
 
-module.exports = data
+export default data
