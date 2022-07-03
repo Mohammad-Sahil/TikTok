@@ -8,11 +8,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-y: hidden;
+  background-color: black;
 }
 
 .app {
-  height: 100vh;
-  background-color: white;
+  /* height: 100vh; */
   display: grid;
   place-items: center;
 }
@@ -25,10 +26,15 @@ body {
   width: 80%;
   max-width: 500px;
   scroll-snap-type: y mandatory;
+  transform: scale(0.6);
+  margin-top: -100px;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .app__videos::-webkit-scrollbar {
+  display: none;
+}
+body::-webkit-scrollbar {
   display: none;
 }
 
@@ -66,7 +72,7 @@ body {
 .videoFooter {
   position: relative;
   color: white;
-  bottom: 150px;
+  bottom: 180px;
   margin-left: 40px;
   display: flex;
 }
@@ -75,9 +81,6 @@ body {
   flex: 1;
 }
 
-.videoFooter__text > p {
-  padding-bottom: 20px;
-}
 
 .videoFooter__record {
   animation: spinTheRecord infinite 5s linear;
@@ -98,10 +101,6 @@ body {
   width: 60%;
 }
 
-.videoFooter__text > h3 {
-  padding-bottom: 20px;
-}
-
 .videoFooter__ticker h1 {
   padding-top: 7px;
 }
@@ -120,7 +119,7 @@ body {
 
 .videoSidebar {
   position: absolute;
-  top: 50%;
+  top: 40%;
   right: 10px;
   color: white;
 }
